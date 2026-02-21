@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="myForm">
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name">
+            <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" id="phone">
+            <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="password">
+            <small class="error" id="passwordError"></small>
+        </div>
+<div class="form-group">
+    <label>Password</label>
+    <div class="password-box">
+        <input type="password" id="password">
+        <span id="togglePassword" class="toggle">👁️</span>
+    </div>
+    <small class="error" id="passwordError"></small>
+</div>
+        <button type="submit">Submit</button>
+        <p class="success" id="successMessage"></p>
+    </form>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
